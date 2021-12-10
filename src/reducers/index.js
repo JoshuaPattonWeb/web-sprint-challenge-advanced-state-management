@@ -29,6 +29,12 @@ const reducer = ()=>{
                     isLoading: false,
                     error: ''
                 }
+            case FAIL_FETCH:
+                return {
+                    ...state,
+                    isLoading: false,
+                    error: action.payload
+                }
             case ADD_SMURF:
                 return {
                     smurf: [
@@ -42,6 +48,7 @@ const reducer = ()=>{
                     isLoading: false,
                     error: ''
                 }
+            default: return state
         }
     }
 
