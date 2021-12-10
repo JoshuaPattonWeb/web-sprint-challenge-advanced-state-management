@@ -13,7 +13,6 @@ export const initialState = {
       error: 'Having an issue loading!'
 }
 
-const reducer = () => {
     const reducer = (state = initialState, action) => {
         switch(action.type) {
             case START_FETCH:
