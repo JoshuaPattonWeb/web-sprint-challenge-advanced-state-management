@@ -13,7 +13,7 @@ export const initialState = {
       error: 'Having an issue loading!'
 }
 
-const reducer = ()=>{
+const reducer = () => {
     const reducer = (state = initialState, action) => {
         switch(action.type) {
             case START_FETCH:
@@ -38,7 +38,7 @@ const reducer = ()=>{
             case ADD_SMURF:
                 return {
                     smurf: [
-                        ...state.smurf {
+                        ...state.smurf, {
                             name: action.payload.name,
                             nickname: action.payload.nickname,
                             position: action.payload.position,
