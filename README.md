@@ -80,17 +80,17 @@ In this project, you will build the reducer, actions and basic redux connects to
 ### Complete components/SmurfList.js
   Connect this component to your smurfs and loading screen state slices.
   
-  * [ ] Connect the smurfs and loading state values to the SmurfList component.
-  * [ ] Replace the single Smurf component instance with a map return a Smurf component for each entry in the smurfs list.
-  * [ ] Replace the static isLoading variable with the state loading variable.
+  * [x] Connect the smurfs and loading state values to the SmurfList component.
+  * [x] Replace the single Smurf component instance with a map return a Smurf component for each entry in the smurfs list.
+  * [x] Replace the static isLoading variable with the state loading variable.
 
 ### Complete components/AddForm.js
   Connect this component to the error state slice, setError and addSmurf actions. Complete the form handling code.
 
-  * [ ] Connect your error state slice, setError and addSmurf actions to the AddForm component.
-  * [ ] Replace all instances of the errorMessage static variable with your error message state slice. 
-  * [ ] Within the handleSubmit function, replace the static assignment to errorMessage with a call to the setError action. Test that an error is displayed when validation code fails.
-  * [ ] Within the handleSubmit function, call your addSmurf action with the smurf name, position, nickname and summery passed as arguments. Test that a smurf is correctly added to when the form is submitted.
+  * [x] Connect your error state slice, setError and addSmurf actions to the AddForm component.
+  * [x] Replace all instances of the errorMessage static variable with your error message state slice. 
+  * [x] Within the handleSubmit function, replace the static assignment to errorMessage with a call to the setError action. Test that an error is displayed when validation code fails.
+  * [x] Within the handleSubmit function, call your addSmurf action with the smurf name, position, nickname and summery passed as arguments. Test that a smurf is correctly added to when the form is submitted.
 
 ## Important Notes:
 
@@ -113,8 +113,18 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What problem does the context API help solve?
 
+- Context API allows to make prop drilling easily accessible
+
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+- Actions: Pass information the store
+- Store: The store is identified as an object that holds state value
+- Reducer: Reducers are used to change an initial, or updated state, that is provided.
 
 3. What does `redux-thunk` allow us to do? How does it change our `action-creators`?
 
+- Thunk is a middleware implemented in the store within the index.js file that allow us to write action creators that return functions rather than actions.
+
 4. What is your favorite state management system you've learned and this sprint? Please explain why!
+
+- My favorite state management system would have to be Context API. I feel as if it is a lot more organized and makes for everything to be accessible at a much easier rate. Without it, we would be drilling for the next 50 years just to complete tasks.

@@ -1,4 +1,4 @@
-
+import { START_FETCH, SUCCESS_FETCH, FAIL_FETCH, ADD_SMURF  } from "../actions"
 export const initialState = {
     smurf: [
         {
@@ -22,7 +22,7 @@ export const initialState = {
                     isLoading: true,
                     error: ''
                 }
-            case SUCCESSFUL_FETCH:
+            case SUCCESS_FETCH:
                 return {
                     smurf: action.payload,
                     isLoading: false,
@@ -50,8 +50,6 @@ export const initialState = {
             default: return state
         }
     }
-
-}
 
 
 //**************DO NOT EDIT ANY CODE BEYOND THIS POINT**************//
