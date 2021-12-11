@@ -15,7 +15,7 @@ import "./App.css";
 class App extends Component {
 
   componentDidMount() {
-    this.props.dispatch(fetchSmurfs)
+    this.props.fetchSmurfs()
   }
   render() {
     return (
